@@ -2,6 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+## two pound signs means custom git ignore line
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -9,6 +10,19 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+
+
+## ignore large semi unchanging Unity Package Manager packages
+/Assets/AstarPathfindingProject
+/Assets/Royal Arena Engine
+/Assets/RTS Engine
+/Assets/RTS Engine Particle Effect Variants
+
+## [potentially revisit] ignore meta file, but not source file with post fix
+#Ignore all .meta file
+*.meta
+#But not source file with postfix. which is everything but a folder
+!*.*.meta
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
